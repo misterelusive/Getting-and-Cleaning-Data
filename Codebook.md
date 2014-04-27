@@ -3,10 +3,11 @@ Codebook
 
 Codebook for assignment of Getting and Cleaning Data course
 
-The variables used are:
+Variables used:
+---------------
 
 Variable name       |  Description
------------------------------------
+--------------------|--------------
 packages            |  stores the packages to be imported
 path                |  stores the current working directory path
 filesPath           |  stores the dataset path
@@ -35,6 +36,7 @@ featureAxis         |  stores the information about the axis (X, Y, Z)
 
 
 Dataset structure:
+------------------
 ```
 Classes ‘data.table’ and 'data.frame':	11880 obs. of  11 variables:
  $ subject            : int  1 1 1 1 1 1 1 1 1 1 ...
