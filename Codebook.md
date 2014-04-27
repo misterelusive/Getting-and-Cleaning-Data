@@ -49,3 +49,4 @@ Classes ‘data.table’ and 'data.frame':	11880 obs. of  11 variables:
  - attr(*, "sorted")= chr  "subject" "activity" "featureDomain" "featureAcceleration" ...
  - attr(*, ".internal.selfref")=<externalptr>
 
+
