@@ -5,35 +5,37 @@ Codebook for assignment of Getting and Cleaning Data course
 
 The variables used are:
 
-1. packages - stores the packages to be imported
-2. path - stores the current working directory path
-3. filesPath - stores the dataset path
-4. dataSubjectTrain - stores the data table for the Subject in Train folder
-5. dataSubjectTest - stores the data table for the Subject in Test folder
-6. dataActivityTrain - stores the data table for the Activity in Train folder
-7. dataActivityTest - stores the data table for the Activity in Test folder
-8. dataTrain - stores the data table for the training set
-9. dataTest - stores the data table for the test set
-10. dataSubject - stores the merged value of dataSubjectTrain and dataSubjectTest
-11. dataActivity - stores the merged value of dataActivityTrain and dataActivityTest
-12. dataTable - stores the merged data for the dataTrain and dataTest
-13. dataFeatures - stores the contents from features.txt and for keeping track of only Mean and SD
-14. dataActivityNames - stores the labels of the various activities
-15. categoryCount - stores the number of categories involved
-16. subject - keeps track of the entity which performed a particular activity
-17. activity - name of the activity
-18. feature - name of the feature
-19. featureDomain - stores the time and frequency
-20. featureInstrument - stores the type of instrument i.e. Accelerometer or Gyroscope
-21. featureAcceleration - stores the acceleration (either of the body or during free fall i.e. gravity)
-22. featureMeanOrSD - stores the mean and standard deviation
-23. featureJerk - stores the jerk signal
-24. featureMagnitude - stores the magnitude of the signal
-25. featureAxis - stores the information about the axis (X, Y, Z)
+Variable name       |  Description
+-----------------------------------
+packages            |  stores the packages to be imported
+path                |  stores the current working directory path
+filesPath           |  stores the dataset path
+dataSubjectTrain    |  stores the data table for the Subject in Train folder
+dataSubjectTest     |  stores the data table for the Subject in Test folder
+dataActivityTrain   |  stores the data table for the Activity in Train folder
+dataActivityTest    |  stores the data table for the Activity in Test folder
+dataTrain           |  stores the data table for the training set
+dataTest            |  stores the data table for the test set
+dataSubject         |  stores the merged value of dataSubjectTrain and dataSubjectTest
+dataActivity        |  stores the merged value of dataActivityTrain and dataActivityTest
+dataTable           |  stores the merged data for the dataTrain and dataTest
+dataFeatures        |  stores the contents from features.txt and for keeping track of only Mean and SD
+dataActivityNames   |  stores the labels of the various activities
+categoryCount       |  stores the number of categories involved
+subject             |  keeps track of the entity which performed a particular activity
+activity            |  name of the activity
+feature             |  name of the feature
+featureDomain       |  stores the time and frequency
+featureInstrument   |  stores the type of instrument i.e. Accelerometer or Gyroscope
+featureAcceleration |  stores the acceleration (either of the body or during free fall i.e. gravity)
+featureMeanOrSD     |  stores the mean and standard deviation
+featureJerk         |  stores the jerk signal
+featureMagnitude    |  stores the magnitude of the signal
+featureAxis         |  stores the information about the axis (X, Y, Z)
 
 
 Dataset structure:
-
+```
 Classes ‘data.table’ and 'data.frame':	11880 obs. of  11 variables:
  $ subject            : int  1 1 1 1 1 1 1 1 1 1 ...
  $ activity           : Factor w/ 6 levels "LAYING","SITTING",..: 1 1 1 1 1 1 1 1 1 1 ...
@@ -48,5 +50,4 @@ Classes ‘data.table’ and 'data.frame':	11880 obs. of  11 variables:
  $ average            : num  -0.0166 -0.0645 0.1487 -0.8735 -0.9511 ...
  - attr(*, "sorted")= chr  "subject" "activity" "featureDomain" "featureAcceleration" ...
  - attr(*, ".internal.selfref")=<externalptr>
-
-
+```
